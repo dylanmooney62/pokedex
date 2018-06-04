@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fetch Api</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="pokedex">
+
+    <section class="pokedex__top">
+      <div class="pokedex__cover">
+        <div class="pokeball">
+          <div class="pokeball__outline">
+            <div class="pokeball__circle">
+              <div class="pokeball__inner-circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pokedex__hinge">
+        <div class="pokedex__clip pokedex__clip--small"></div>
+        <div class="pokedex__clip"></div>
+        <div class="pokedex__clip"></div>
+      </div>
+    </section>
+
+    <div class="pokedex__main">
+
+      <section class="pokedex__left">
+        <div class="pokedex__leds">
+          <div class="led led--on"></div>
+          <div class="led led--on"></div>
+        </div>
+        <button class="power-button power-button--on"></button>
+      </section>
+
+      <section class="pokedex__center">
+        <div class="interface">
+          <div class="interface__display">
+
+            <!-------- USER INTERFACE ------------>
+
+            <div class="ui">
+              <div class="top-ui">
+                <span class="top-ui__text">POKEDEX</span>
+                <span class="top-ui__time">12:57</span>
+                <span class="top-ui__wifi">
+                  <i class=" fas fa-wifi"></i>
+                </span>
+              </div>
+              <div class="main-ui">
+
+                <img src="images/loading.gif" class="ui__loader" alt="">
+
+                <!-- -------START OF HOME UI----- -->
+
+                <div class="home">
+                  <form class="home__form">
+                    <input class="home__input"  id="search" placeholder="Search"></input>
+                  </form>
+                  <ul class="pokemon-list"></ul>
+                </div>
+
+
+                <!-- END OF HOME UI/START OF POKEMON UI -->
+
+
+                <div class="pokemon-ui">
+                  <div class="pokemon-ui__left" id="pokemon">
+                    <div class="pokemon">
+                      <img src="images/pokeball.png" alt="" class="pokemon__pokeball">
+                      <img src="" class="pokemon__image">
+                    </div>
+                    <div class="pokemon__types">
+                      <div class="pokemon__type pokemon__type-1">Grass</div>
+                      <div class="pokemon__type pokemon__type-2">Poison</div>
+                    </div>
+                  </div>
+                  <div class="pokemon-ui__right">
+                    <div class="pokemon__details">
+                      <div class="pokemon__name">Bulbasaur</div>
+                      <div class="pokemon__dex-number">#001</div>
+                    </div>
+                    <div class="pokemon-ui__right-bottom">
+                      <ul class="pokemon__stats">
+                        <li class="pokemon__stat">
+                          <span class="pokemon__stat-title">Height:</span>
+                          <span class="pokemon__height">0.7m</span>
+                        </li>
+                        <li class="pokemon__stat">
+                          <span class="pokemon__stat-title">Weight:</span>
+                          <span class="pokemon__weight">68lbs</span>
+                        </li>
+                        <li class="pokemon__stat">
+                          <span class="pokemon__stat-title">Ability:</span>
+                          <span class="pokemon__ability">Grow</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- END OF POKEMON UI -->
+
+              </div>
+            </div>
+
+          </div>
+          <div class="interface__buttons">
+            <button class="interface-button interface-button--left"></button>
+            <button class="interface-button interface-button--right"></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="pokedex__right">
+        <div class="controls">
+          <div class="controls__col">
+            <button class="direction-button direction-button--left"></button>
+          </div>
+          <div class="controls__col controls__col--center">
+            <button class="direction-button direction-button--up"></button>
+            <button class="direction-button direction-button--center"></button>
+            <button class="direction-button direction-button--down"></button>
+          </div>
+          <div class="controls__col">
+            <button class="direction-button direction-button--right"></button>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
